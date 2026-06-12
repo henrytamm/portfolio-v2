@@ -88,6 +88,22 @@ a {
     max-width: 600px;
 }
 
+.hero-avatar {
+    margin-bottom: 24px;
+}
+
+.avatar-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid transparent;
+    background-image: linear-gradient(var(--bg), var(--bg)), var(--gradient);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    box-shadow: 0 0 24px rgba(167, 139, 250, 0.3);
+}
+
 .hero-badge {
     display: inline-block;
     padding: 6px 14px;
