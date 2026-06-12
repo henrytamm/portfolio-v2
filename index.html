@@ -17,6 +17,7 @@
         <a href="#top" class="nav-link active">Home</a>
         <a href="#about" class="nav-link">About</a>
         <a href="#work" class="nav-link">Work</a>
+        <a href="#samples" class="nav-link">Samples</a>
         <a href="#projects" class="nav-link">Projects</a>
         <a href="#contact" class="nav-link">Say Hi</a>
     </nav>
@@ -132,6 +133,135 @@
                         <span class="tag">Release Notes</span>
                         <span class="tag">Ditamaps</span>
                         <span class="tag">Cross-team</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Writing Samples -->
+    <section id="samples" class="samples">
+        <div class="section-container">
+            <h2 class="section-title">Writing samples</h2>
+            <p class="samples-sub">Published documentation I authored for Salesforce Data Cloud. These live on developer.salesforce.com.</p>
+            <div class="samples-grid">
+                <div class="sample-card">
+                    <div class="sample-type">SDK Reference</div>
+                    <h3>Web SDK Time Tracking</h3>
+                    <p>Full API reference for time tracking in the Salesforce Web SDK — configuration options, implementation examples, event structure, and lifecycle management.</p>
+                    <div class="sample-preview">
+                        <pre><code># Time Tracking
+
+Time tracking captures user engagement metrics by
+monitoring active time spent on pages and catalog
+items. Events are sent when configurable time
+thresholds are crossed.
+
+## Configuration Options
+
+| Option Name         | Type    | Default   |
+| ------------------- | ------- | --------- |
+| `enabled`           | boolean | `false`   |
+| `thresholds`        | array   | See below |
+| `activityTimeout..` | number  | `5000`    |
+
+## Implementation Examples
+
+```javascript
+SalesforceInteractions.init({
+  dataCloud: {
+    timeTracking: {
+      enabled: true,
+      thresholds: [
+        { label: 'ENGAGED', threshold: 15000 },
+        { label: 'HIGH_ENGAGEMENT', threshold: 60000 }
+      ]
+    }
+  }
+});
+```</code></pre>
+                    </div>
+                    <div class="sample-meta">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">SDK</span>
+                        <span class="tag">API Reference</span>
+                    </div>
+                </div>
+                <div class="sample-card">
+                    <div class="sample-type">Connector Guide</div>
+                    <h3>Confluence Unstructured Connector</h3>
+                    <p>End-to-end guide for ingesting unstructured data from Atlassian Confluence Cloud into Data Cloud — setup, limitations, troubleshooting.</p>
+                    <div class="sample-preview">
+                        <pre><code># Confluence Unstructured Connector (Beta)
+
+Use the Confluence Unstructured connector to ingest
+unstructured data from Atlassian Confluence Cloud
+into Data 360.
+
+## Supported Content Types
+
+1. Pages (including nested/child pages)
+2. Blog posts
+3. Comments (on pages and blog posts)
+4. Attachments
+
+## Known Limitations
+
+**Confluence Cloud Only**
+This connector supports Atlassian Confluence Cloud
+(SaaS) only. Confluence Data Center and Server
+are not supported.
+
+**Single Space per Data Lake Object**
+Each UDLO ingests content from a single space.
+To ingest from multiple spaces, create separate
+UDLOs for each space.</code></pre>
+                    </div>
+                    <div class="sample-meta">
+                        <span class="tag">Connector</span>
+                        <span class="tag">Unstructured Data</span>
+                        <span class="tag">Beta</span>
+                    </div>
+                </div>
+                <div class="sample-card">
+                    <div class="sample-type">Mobile SDK Guide</div>
+                    <h3>Capture Engagement Data (Mobile)</h3>
+                    <p>Implementation guide for capturing engagement events via the Engagement Mobile SDK — structured/unstructured events, iOS and Android code samples.</p>
+                    <div class="sample-preview">
+                        <pre><code># Capture Engagement Data
+
+The Data 360 Module for the Engagement Mobile SDK
+enables the collection of rich engagement data
+from customer interactions within your mobile app.
+
+## Supported Event Types
+
+### Structured Events
+Pre-configured with Mobile Connector schema:
+- Cart Event: Track shopping cart interactions
+- Catalog Event: Monitor product engagement
+- Order Event: Capture purchase data
+
+### Unstructured Events
+No predefined schema. Create custom event
+definitions for Data 360 ingestion.
+
+```swift
+// iOS - Structured AddToCartEvent
+SFMCSdk.track(AddToCartEvent(
+    lineItem: LineItem(
+        catalogObjectType: "Product",
+        catalogObjectId: "product-1",
+        quantity: 1,
+        price: 20.0
+    )
+))
+```</code></pre>
+                    </div>
+                    <div class="sample-meta">
+                        <span class="tag">iOS</span>
+                        <span class="tag">Android</span>
+                        <span class="tag">SDK</span>
                     </div>
                 </div>
             </div>
