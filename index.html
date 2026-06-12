@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Henry Tam — Technical Writer</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📝</text></svg>">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/bb68d7f8c4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Floating nav pill -->
+    <nav class="pill-nav">
+        <a href="#top" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#work" class="nav-link">Work</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Say Hi</a>
+    </nav>
+
+    <!-- Hero -->
+    <section id="top" class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">📝 Technical Writer @ Salesforce</div>
+            <h1 class="hero-title">
+                I turn <span class="gradient-text">complex systems</span><br>
+                into <span class="typewriter" id="typewriter"></span>
+            </h1>
+            <p class="hero-sub">
+                Documenting Data Cloud by day. Building full-stack apps and automation tools by night.
+                <br>Psychology grad turned engineer turned writer — I've been on both sides of the docs.
+            </p>
+            <div class="hero-ctas">
+                <a href="#work" class="btn btn-primary">See my work <span class="arrow">→</span></a>
+                <a href="#contact" class="btn btn-ghost">Get in touch</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="terminal">
+                <div class="terminal-header">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                    <span class="terminal-title">~/henry</span>
+                </div>
+                <div class="terminal-body">
+                    <p><span class="prompt">$</span> whoami</p>
+                    <p class="output">henry.tam — technical writer, ex-SWE</p>
+                    <p><span class="prompt">$</span> cat current_role.txt</p>
+                    <p class="output">Data Cloud @ Salesforce</p>
+                    <p class="output">→ Connectors, SDKs, APIs, Gov Cloud</p>
+                    <p><span class="prompt">$</span> ls skills/</p>
+                    <p class="output">DITA-XML/ Python/ React/ MCP/ Perforce/</p>
+                    <p><span class="prompt">$</span> echo $VIBE</p>
+                    <p class="output">this is fine 🐕‍🦺🔥</p>
+                    <p class="cursor-line"><span class="prompt">$</span> <span class="cursor">▊</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about">
+        <div class="section-container">
+            <h2 class="section-title">The lore</h2>
+            <div class="about-grid">
+                <div class="about-card">
+                    <span class="about-emoji">🧠</span>
+                    <h3>Psychology Grad</h3>
+                    <p>Started by studying how people think. Turns out that's useful when you're explaining software to humans.</p>
+                </div>
+                <div class="about-card">
+                    <span class="about-emoji">💻</span>
+                    <h3>App Academy</h3>
+                    <p>Learned to code. Built full-stack apps. Realized I was better at explaining code than writing it at 2am.</p>
+                </div>
+                <div class="about-card">
+                    <span class="about-emoji">✍️</span>
+                    <h3>Tech Writer</h3>
+                    <p>Now I document Salesforce Data Cloud — connectors, SDKs, APIs, and everything in between. Plus I automate the boring parts.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work -->
+    <section id="work" class="work">
+        <div class="section-container">
+            <h2 class="section-title">What I actually do</h2>
+            <div class="work-grid">
+                <div class="work-item">
+                    <div class="work-icon">📄</div>
+                    <h3>Documentation</h3>
+                    <p>DITA XML topics for Salesforce Help. Release notes, how-to guides, API references. Structured authoring at enterprise scale.</p>
+                    <div class="work-tags">
+                        <span class="tag">DITA XML</span>
+                        <span class="tag">Perforce</span>
+                        <span class="tag">Structured Authoring</span>
+                    </div>
+                </div>
+                <div class="work-item">
+                    <div class="work-icon">🔌</div>
+                    <h3>Data Cloud Connectors</h3>
+                    <p>Documenting 30+ connectors — from BigQuery to Databricks to Zendesk. Auth flows, data mappings, Gov Cloud compliance.</p>
+                    <div class="work-tags">
+                        <span class="tag">Connectors</span>
+                        <span class="tag">Gov Cloud</span>
+                        <span class="tag">SDK</span>
+                    </div>
+                </div>
+                <div class="work-item">
+                    <div class="work-icon">🤖</div>
+                    <h3>Automation</h3>
+                    <p>Built tools that auto-generate release notes, process Slack intake requests, route doc work items, and manage version control.</p>
+                    <div class="work-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">MCP</span>
+                        <span class="tag">Slack API</span>
+                    </div>
+                </div>
+                <div class="work-item">
+                    <div class="work-icon">🚀</div>
+                    <h3>Release Management</h3>
+                    <p>Flipping beta/pilot/GA tags, managing ditamaps, coordinating cross-team doc drops across releases.</p>
+                    <div class="work-tags">
+                        <span class="tag">Release Notes</span>
+                        <span class="tag">Ditamaps</span>
+                        <span class="tag">Cross-team</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="projects">
+        <div class="section-container">
+            <h2 class="section-title">Side quests</h2>
+            <div class="project-grid">
+                <a href="https://github.com/henrytamm/tech-writing-tools" target="_blank" class="project-card featured">
+                    <div class="project-label">Featured</div>
+                    <h3>Tech Writing Tools</h3>
+                    <p>Automation toolkit for technical writing workflows. Slack intake processing, doc routing, release note generation, Perforce automation.</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>MCP</span>
+                        <span>Slack API</span>
+                        <span>DITA XML</span>
+                    </div>
+                    <div class="project-link">View on GitHub <span>→</span></div>
+                </a>
+                <a href="https://tea-time-ayc5.onrender.com/" target="_blank" class="project-card">
+                    <h3>Tea Time</h3>
+                    <p>Discord clone with real-time messaging, servers, channels, and WebSocket chat. Dark theme, live deploy.</p>
+                    <div class="project-tech">
+                        <span>Flask</span>
+                        <span>React</span>
+                        <span>Redux</span>
+                        <span>WebSockets</span>
+                        <span>PostgreSQL</span>
+                    </div>
+                    <div class="project-link">Live Site <span>→</span></div>
+                </a>
+                <a href="https://github.com/henrytamm/yell-v2" target="_blank" class="project-card">
+                    <h3>Yell</h3>
+                    <p>Yelp-inspired business review platform. Star ratings, category search, Google Maps integration, full CRUD.</p>
+                    <div class="project-tech">
+                        <span>Flask</span>
+                        <span>React</span>
+                        <span>Redux</span>
+                        <span>Google Maps</span>
+                        <span>PostgreSQL</span>
+                    </div>
+                    <div class="project-link">View on GitHub <span>→</span></div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <div class="section-container">
+            <h2 class="section-title">Say hi</h2>
+            <p class="contact-sub">Want to chat about docs, automation, or anything else? I don't bite.</p>
+            <div class="contact-links">
+                <a href="https://www.linkedin.com/in/henry-t95/" target="_blank" class="contact-card">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com/henrytamm" target="_blank" class="contact-card">
+                    <i class="fa-brands fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+                <a href="mailto:henrytam95@gmail.com" class="contact-card">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>Email</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Built with HTML, CSS, and vibes. No frameworks were harmed.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
